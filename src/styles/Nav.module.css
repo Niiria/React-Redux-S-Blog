@@ -1,0 +1,105 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.navbar {
+  cursor: default;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  background: linear-gradient(
+    -45deg,
+    #fca4d081,
+    #ffdce97e,
+    #fcc8fc77,
+    #dec8f77e
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  background-color: white;
+  padding: 4px;
+  -webkit-box-shadow: 0px 10px 15px -1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 10px 15px -1px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  font-family: "Indie Flower", cursive;
+  font-size: 2rem;
+  min-width: 150px;
+}
+
+.logo_ico {
+  margin: 0 5px;
+  width: 48px;
+  height: 48px;
+}
+
+.links {
+  font-family: "Indie Flower", cursive;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.links * {
+  margin: 0 8px;
+}
+
+.links_hello {
+  margin: auto;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.btn_logout {
+  font-family: "Indie Flower", cursive;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.links a:hover {
+  transform: scale(1.1);
+}
+
+.btn_logout:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar_links-hello {
+    display: none;
+  }
+}

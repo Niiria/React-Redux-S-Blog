@@ -1,0 +1,82 @@
+.details {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: solid 1px black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+}
+
+.favourites_btn {
+  display: flex;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.favourites_btn svg {
+  width: 48px;
+  height: 48px;
+}
+
+.favourites_btn:hover {
+  transform: scale(1.1);
+}
+
+.img {
+  border-radius: 15px;
+}
+
+.article {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.6rem;
+  padding: 10px;
+}
+
+.comments_btn {
+  margin-right: auto;
+  outline: none;
+  border-radius: 15px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.scroll_arrow {
+  position: fixed;
+  z-index: 51;
+  bottom: 2%;
+  right: 2%;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.scrollArrow:hover {
+  transform: scale(1.1);
+}
+
+.scrollArrow svg {
+  z-index: 100;
+  width: 64px;
+  height: 64px;
+}

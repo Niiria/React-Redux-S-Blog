@@ -1,0 +1,42 @@
+.favourites {
+  padding: 10px;
+  display: flex;
+  flex-grow: 1;
+  align-items: baseline;
+  background-color: whitesmoke;
+  justify-content: center;
+}
+
+.posts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.error {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(182, 15, 48, 0.527);
+}
+
+@media only screen and (max-width: 900px) {
+  .posts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .favourites_error-bg {
+    align-items: center;
+  }
+}

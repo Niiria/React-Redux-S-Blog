@@ -1,0 +1,13 @@
+footer {
+  position: absolute;
+  background-color: aliceblue;
+  padding: 2px 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 50;
+  line-height: 20px;
+  border-top: 1px solid black;
+  font-family: "Open Sans Condensed", sans-serif;
+}
