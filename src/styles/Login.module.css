@@ -1,6 +1,6 @@
 .background {
   flex-grow: 1;
-  background-image: url(/src/Assets/loginBackground.jpg);
+  background-image: url(/src/assets/loginBackground.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;

@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import styles from '../styles/Details.module.css';
-import { ReactComponent as HeartFill } from '../Assets/heartFill.svg'
-import { ReactComponent as HeartOutline } from '../Assets/heartOutline.svg'
+import { ReactComponent as HeartFill } from '../assets/heartFill.svg'
+import { ReactComponent as HeartOutline } from '../assets/heartOutline.svg'
 import ModalLoader from '../utility/ModalLoader'
 import Comments from './helpers/Comments'
 import React, { useEffect, useState } from 'react'

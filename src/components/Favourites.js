@@ -19,17 +19,15 @@ export default function Favourites() {
 
   return (
     <section className={styles.favourites}>
-      <div className={styles.posts}>
-        {favourites.length >= 0 ? (favourites.map((post) => {
-          return (
-            <Post key={post.id} post={post} />
-          );
-        }))
-          : (<div className="loader"></div>)}
-      </div>
-      {favourites.length === 0 &&
-        <div className={styles.error}>No Favourites in your list</div>
-      }
-    </section>
+      {favourites.length ? (
+        <div className={styles.posts}>
+          {favourites.map((post) => {
+            return (
+              <Post key={post.id} post={post} />
+            );
+          })}
+        </div>)
+        : (<div className={styles.error}>No Favourites in your list</div>)}
+    </section >
   )
 }

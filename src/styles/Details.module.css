@@ -71,11 +71,11 @@
   transition: 0.3s ease-in-out;
 }
 
-.scrollArrow:hover {
+.scroll_arrow:hover {
   transform: scale(1.1);
 }
 
-.scrollArrow svg {
+.scroll_arrow svg {
   z-index: 100;
   width: 64px;
   height: 64px;

@@ -21,7 +21,6 @@ export const getFavourites = (favouritesId) => async dispatch => {
     type: GET_FAVOURITES,
     payload: tempFavourites
   })
-
 }
 
 export const fetchPostDetails = (postId, favourites) => async dispatch => {
